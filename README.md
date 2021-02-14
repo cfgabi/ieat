@@ -1,24 +1,6 @@
-# README
+# iEat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introdução
 
-Things you may want to cover:
+Este repositório foi criado para o desenvolvimento de um projeto de aplicativo simples para pedidos em restaurantes. Esse projeto é parte das atividades do curso "Da arquitetura ao deploy com Ruby", da Digital Innovation One.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
