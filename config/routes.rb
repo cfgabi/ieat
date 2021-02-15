@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :restaurants
   devise_for :users
   # O Home/index foi criado com o intuito de ser a página inicial da aplicação
   root 'home#index'
