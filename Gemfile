@@ -34,6 +34,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
+  # Para a parte de testes, uma das gems utilizadas vai ser a RSpec-Rails
+  gem 'rspec-rails'
+
+  # Para geração de casos de testes automatizados vão ser utilizadas as gems FactoryBot e Faker
+  gem 'factory_bot_rails'
+  gem 'faker'
+
+  # Para validação de algumas condições do código será utilizado a gem ShouldaMatchers
+  gem 'shoulda-matchers'
 end
 
 group :development do
