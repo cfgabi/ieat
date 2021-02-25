@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th> Produto </th>
+      <th> Valor </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% r.products.each do |p| %>
+      <tr>
+        <td><%= p.name %></td>
+        <td><%= p.value %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

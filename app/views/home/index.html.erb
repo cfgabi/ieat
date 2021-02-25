@@ -1,2 +1,20 @@
 <h1>Home#index</h1>
 <p>Hello <%= @email %></p>
+
+<!-- Para cada tipo de usuário diferente será mostrada uma página diferente -->
+
+<% if user_signed_in? %>
+  <!-- Se o usuário for do tipo restaurante, será mostrada uma tabela com informações
+       sobre os produtos cadastrados desse restaurante. -->
+  <% if current_user.restaurant? %>
+    <!-- A tabela a ser mostrada para usuários de restaurantes será renderizada a
+         partir do arquivo _restaurant.html.erb -->
+    <%= render 'restaurant' %>
+  <!-- Caso o usuário seja um cliente, será mostrada uma table com os restaurantes
+       e seus produtos -->
+  <% elsif current_user.customer? %>
+    <!-- A tabela a ser mostrada para clientes será renderizada a
+         partir do arquivo _customer.html.erb -->
+    <%= render 'customer' %>
+  <% end %>
+<% end %>
